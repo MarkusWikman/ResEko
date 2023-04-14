@@ -7,8 +7,6 @@
     src: url('../fonts/SofiaSans-VariableFont_wght.ttf') format('truetype');
 }
 
-
-
 html {
     font-size: 14px;
 }
@@ -50,4 +48,25 @@ a {
     padding-left: 30px;
     color: #5F396A;
     font-family: 'Sofia Sans';
+}
+.footerStyle {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: 'Sofia Sans';
+    line-height: 10px;
+}
+.footer-section {
+    flex-basis: 30%;
+    margin-right: 20px;
+}
+.experthjalp {
+    font-family: 'Sofia Sans';
+    margin-top: 150px;
+    font-weight: 400;
+}
+.somLonarSig {
+    font-family: 'Sofia Sans';
+    margin-top: 20px;
+    font-weight: 300;
 }
