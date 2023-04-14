@@ -7,6 +7,10 @@
     src: url('../fonts/SofiaSans-VariableFont_wght.ttf') format('truetype');
 }
 
+p{
+    font-size: 18px;
+}
+
 html {
     font-size: 14px;
 }
@@ -21,6 +25,9 @@ html {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
+p {
+    font-family: 'Sofia Sans';
+}
 html {
   position: relative;
   min-height: 100%;
@@ -59,14 +66,35 @@ a {
 .footer-section {
     flex-basis: 30%;
     margin-right: 20px;
+    margin-top: 20px;
 }
 .experthjalp {
     font-family: 'Sofia Sans';
     margin-top: 150px;
-    font-weight: 400;
+    font-size: 75px;
+    font-weight: 300;
 }
 .somLonarSig {
     font-family: 'Sofia Sans';
     margin-top: 20px;
     font-weight: 300;
+    font-size: 42px;
+    margin-bottom: 50px;
+}
+.restaurangRubrik {
+    font-family: 'Sofia Sans';
+    width: 400px;
+    margin-bottom: 50px;
+    text-align: center;
+    flex-basis: 30%;
+}
+.homePageHeaders {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+img {
+    display: block;
+    margin: auto;
+    border: 3px solid #ccc;
 }
