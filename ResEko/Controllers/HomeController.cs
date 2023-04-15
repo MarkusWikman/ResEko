@@ -17,6 +17,14 @@ namespace ResEko.Controllers
         {
             return View();
         }
+        public IActionResult Restaurang()
+        {
+            return View();
+        }
+        public IActionResult Redovisning()
+        {
+            return View();
+        }
         public IActionResult About()
         {
             return View();
