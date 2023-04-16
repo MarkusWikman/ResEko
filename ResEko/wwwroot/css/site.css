@@ -7,97 +7,73 @@
     src: url('../fonts/SofiaSans-VariableFont_wght.ttf') format('truetype');
 }
 
-p{
-    font-size: 18px;
-}
-
-html {
-    font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-p {
-    font-family: 'Sofia Sans';
-}
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  margin-bottom: 60px;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-    a:hover {
-        color: #5F396A;
+    p {
+        font-family: 'Sofia Sans';
+        font-size: 1.14em;
     }
 
-.ResEkoStyle {
-    font-family: 'Nico Moji';
-    font-size: 35px;
-    color: #5F396A;
+    html {
+        position: relative;
+        min-height: 100%;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+        a:hover {
+            color: #5F396A;
+        }
+
+    .ResEkoStyle {
+        font-family: 'Nico Moji';
+        font-size: 2.2em;
+        color: #5F396A;
+    }
+    .OmOssStyle {
+        font-weight: 800;
+        color: #5F396A;
+        font-family: 'Sofia Sans';
+        text-align: left;
+    }
+    .footerStyle {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        font-family: 'Sofia Sans';
+        line-height: 0.6em;
+    }
+
+    .footer-section {
+        flex-basis: 30%;
+        margin-right: 1em;
+        margin-top: 1em;
+    }
+
+@media screen and (max-width: 768px) {
+    .container-fluid{
+        align-content:center;
+    }
+    .footerStyle {
+        display: block;
+        justify-content: space-between;
+        align-items: flex-start;
+        font-family: 'Sofia Sans';
+        line-height: 0.6em;
+    }
+
 }
-.OmOssStyle {
-    font-weight: 800;
-    padding-left: 30px;
-    color: #5F396A;
-    font-family: 'Sofia Sans';
-}
-.footerStyle {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    font-family: 'Sofia Sans';
-    line-height: 10px;
-}
-.footer-section {
-    flex-basis: 30%;
-    margin-right: 20px;
-    margin-top: 20px;
-}
-.experthjalp {
-    font-family: 'Sofia Sans';
-    margin-top: 150px;
-    font-size: 75px;
-    font-weight: 300;
-}
-.somLonarSig {
-    font-family: 'Sofia Sans';
-    margin-top: 20px;
-    font-weight: 300;
-    font-size: 42px;
-    margin-bottom: 50px;
-}
-.restaurangRubrik {
-    font-family: 'Sofia Sans';
-    width: 400px;
-    margin-bottom: 50px;
-    text-align: center;
-    flex-basis: 30%;
-}
-.homePageHeaders {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-}
-img {
-    display: block;
-    margin: auto;
-    border: 3px solid #ccc;
-}
-.restaurantdiv{
-    margin-bottom: 30px;
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container-fluid {
+        align-content: center;
+    }
+    .footerStyle {
+        height: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        font-family: 'Sofia Sans';
+        line-height: 0.6em;
+    }
 }
