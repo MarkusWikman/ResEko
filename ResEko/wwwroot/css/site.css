@@ -2,78 +2,104 @@
     font-family: 'Nico Moji';
     src: url('../fonts/nicomoji/NicoMoji-Regular.ttf') format('truetype');
 }
+
 @font-face {
     font-family: 'Sofia Sans';
     src: url('../fonts/SofiaSans-VariableFont_wght.ttf') format('truetype');
 }
 
-    p {
-        font-family: 'Sofia Sans';
-        font-size: 1.14em;
+p {
+    font-family: 'Sofia Sans';
+    font-size: 1.14em;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #000000;
     }
 
-    html {
-        position: relative;
-        min-height: 100%;
-    }
+.ResEkoStyle {
+    font-family: 'Nico Moji';
+    font-size: 2.2em;
+    color: #5F396A;
+}
 
-    a {
-        color: inherit;
-        text-decoration: none;
-    }
+.OmOssStyle {
+    font-weight: 800;
+    color: #5F396A;
+    font-family: 'Sofia Sans';
+    text-align: left;
+}
 
-        a:hover {
-            color: #5F396A;
-        }
+.footerStyle {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: 'Sofia Sans';
+    line-height: 0.6em;
+    position: center;
+    /*bottom: 0;*/
+}
 
-    .ResEkoStyle {
-        font-family: 'Nico Moji';
-        font-size: 2.2em;
-        color: #5F396A;
-    }
-    .OmOssStyle {
-        font-weight: 800;
-        color: #5F396A;
-        font-family: 'Sofia Sans';
-        text-align: left;
-    }
-    .footerStyle {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        font-family: 'Sofia Sans';
-        line-height: 0.6em;
-    }
+.footer-section {
+    flex-basis: 30%;
+    margin-right: 1em;
+    margin-top: 1em;
+}
 
-    .footer-section {
-        flex-basis: 30%;
-        margin-right: 1em;
-        margin-top: 1em;
-    }
-
+/*Mobile*/
 @media screen and (max-width: 768px) {
-    .container-fluid{
-        align-content:center;
+    .container-fluid {
+        align-content: center;
     }
+
     .footerStyle {
         display: block;
         justify-content: space-between;
         align-items: flex-start;
         font-family: 'Sofia Sans';
         line-height: 0.6em;
+        position: relative;
+        bottom: 0;
     }
-
 }
+/*Ipad*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .container-fluid {
         align-content: center;
     }
     .footerStyle {
-        height: 20px;
+        /*        justify-content: space-between;
+        align-items: flex-start;
+        line-height: 0.9em;
+        position: center;
+        width: 100%;
+        font-size: 120%;*/
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
         font-family: 'Sofia Sans';
-        line-height: 0.6em;
+        line-height: 1em;
+        position: center;
     }
+
 }
+
