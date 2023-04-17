@@ -87,12 +87,6 @@ a {
         align-content: center;
     }
     .footerStyle {
-        /*        justify-content: space-between;
-        align-items: flex-start;
-        line-height: 0.9em;
-        position: center;
-        width: 100%;
-        font-size: 120%;*/
         display: flex;
         justify-content: space-between;
         align-items: flex-start;

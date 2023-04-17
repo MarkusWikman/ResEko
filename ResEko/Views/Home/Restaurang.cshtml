@@ -1,9 +1,19 @@
-﻿<link rel="stylesheet" href="~/css/restaurang.css" asp-append-version="true" />
+﻿
 
-<div class="container">
-    <img src="https://ontheburner.foodservicedirect.com/wp-content/uploads/2019/09/staffmeeting_resized_otb.jpg" style="opacity:50%; width:85%; height: 100%; margin-top: -16px; border-style:none;">
-    <div class="centered">
-        <h3>Praktiska lösningar.</h3>
-        <h3>Lönsamma Resultat.</h3>
-    </div>
+<link rel="stylesheet" href="~/css/restaurang.css" asp-append-version="true" />
+<header>
+    <nav class="navbar navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container-fluid">
+            <a class="ResEkoStyle" asp-area="" asp-controller="Home" asp-action="Index">ResEko</a>
+            <a class="OmOssStyle" asp-area="" asp-controller="Home" asp-action="About">Om oss</a>
+        </div>
+    </nav>
+</header>
+<img src="https://ontheburner.foodservicedirect.com/wp-content/uploads/2019/09/staffmeeting_resized_otb.jpg">
+<div class="textOnImg">
+    <h3>Praktiska lösningar.</h3>
+    <h3>Lönsamma Resultat.</h3>
+    <hr />
+    <p>Branschledande restaurangkonsulter som levererar praktiska lösningar och hjälper dig att uppnå bästa resultat</p>
+    <button type="button" class="btn btn-primary btn-lg">Begär Gratis Konsultation</button>
 </div>

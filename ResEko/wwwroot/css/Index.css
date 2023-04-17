@@ -53,6 +53,7 @@
         display: inline-block;
         width: 42%;
         vertical-align: top;
+        margin-right: 5%
     }
 
     .experthjalp {
@@ -62,8 +63,5 @@
     .somLonarSig {
         margin-bottom: 6%;
     }
-
-    .moreSpace {
-        margin-bottom: 2%;
-    }
 }
+
