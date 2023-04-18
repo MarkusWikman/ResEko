@@ -1,27 +1,148 @@
-﻿@media screen and (max-width: 768px) {
-
+﻿@font-face {
+    font-family: 'Sofia Sans';
+    src: url('../fonts/SofiaSans-VariableFont_wght.ttf') format('truetype');
 }
+@media screen and (max-width: 768px) {
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .textOnImg {
+        position: absolute;
+        top: 28%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-weight:400;
+    }
+    .textOnImg, h3 {
+        font-size: 150%;
+    }
+    img {
+        width: 100%;
+        margin-top: -6.9%;
+        opacity: 0.5;
+    }
+    .RestaurangText {
+        margin-top: 2em;
+        text-align: center;
+        font-size: 160%;
+        margin-bottom: 5%;
+    }
+    .container {
+        display: flex; /*set the container to display:flex */
+        gap: 2em;
+        margin-top: 2em;
+    }
+
+    .restaurantimg {
+        width: 45%;
+        height: 30%;
+        margin-left: 25%;
+        margin-bottom: 5%;
+        opacity: 2;
+    }
+
+    .educationimg {
+        width: 30%;
+        height: 15%;
+        opacity: 2;
+    }
+
+    .box p {
+        color: #878200;
+        margin-top: 0.5em;
+        text-align: center;
+        font-size: 140%;
+    }
+
+    .box li {
+        font-family: 'Sofia Sans';
+    }
+    .MenyAvTjanster {
+    text-align: center;
+}
+
+.box {
+    width: 17em;
+    height: 17em;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+}
 
 }
+
+/*Computer*/
 @media screen and (min-width: 1024px) {
     img {
         width: 100%;
-        margin-top: -1.8%;
+        margin-top: -7.2%;
         opacity: 0.5;
     }
+
+    h3 {
+        font-size: 220%;
+    }
+
     .textOnImg {
         position: absolute;
         top: 68%;
         left: 50%;
         transform: translate(-50%, -50%);
-        text-align:center;
+        text-align: center;
     }
-    h3{
-        font-size: 300%;
+
+    .RestaurangText {
+        margin-top: 2em;
+        text-align: center;
     }
-    p {
-        font-size: 138%;
+
+    .MenyAvTjanster {
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+        gap: 8em;
+        margin-top: 4em;
+    }
+
+    .box {
+        width: 17em;
+        height: 17em;
+        background-color: #f2f2f2; /* set the background color */
+        border: 1px solid #ddd;
+    }
+
+        .box p {
+            color: #878200;
+            margin-top: 0.5em;
+            text-align: center;
+            font-size: 140%; 
+        }
+        .box li {
+            font-family: 'Sofia Sans';
+        }
+    .column {
+        display: flex;
+        flex-direction: column;
+        width: 55%;
+        margin-left: 23%;
+        font-size: 130%;
+    }
+    .restaurantimg {
+        width: 45%;
+        height: 30%;
+        margin-left: 25%;
+        margin-bottom: 5%;
+        opacity: 2;
+    }
+    .educationimg {
+        width: 30%;
+        height: 15%;
+        opacity: 2;
     }
 }
+
+
+
 

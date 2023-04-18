@@ -10,7 +10,14 @@
     <link rel="stylesheet" href="~/ResEko.styles.css" asp-append-version="true" />
 </head>
     <body>
-        
+    <header>
+        <nav class="navbar navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="ResEkoStyle" asp-area="" asp-controller="Home" asp-action="Index">ResEko</a>
+                <a class="OmOssStyle" asp-area="" asp-controller="Home" asp-action="About">Om oss</a>
+            </div>
+        </nav>
+    </header>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
