@@ -1,0 +1,28 @@
+﻿.Konsultationsrubrik {
+    margin-top:50%;
+    position: relative;
+    left: 140%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+    font-family: 'Sofia Sans'
+}
+form {
+    flex-direction: column;
+    display: flex;
+}
+.form-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 400px;
+    border-radius: 10px;
+}
+label{
+    text-align:left;
+}
+input[id="comment"] {
+    height: 100%;
+}
+.bekräftaknapp {
+    margin-top: 10%;
+    width: 80%;
+}

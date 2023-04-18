@@ -25,6 +25,10 @@ namespace ResEko.Controllers
         {
             return View();
         }
+        public IActionResult Konsultation()
+        {
+            return View();
+        }
         public IActionResult About()
         {
             return View();
