@@ -80,7 +80,7 @@ a {
         align-items: flex-start;
         font-family: 'Sofia Sans';
         line-height: 0.6em;
-        position: relative;
+        position:relative;
         bottom: 0;
     }
 }

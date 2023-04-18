@@ -17,7 +17,6 @@
     .experthjalp {
         font-size: 430%;
     }
-
     body {
         text-align: center;
     }
@@ -25,11 +24,12 @@
     .pText {
         font-size: 180%
     }
-
     h2 {
         font-size: 240%
     }
-
+    .container{
+        display:block;
+    }
     .moreSpace {
         margin-bottom: 10%;
     }
@@ -51,7 +51,7 @@
 
     .left-column, .right-column {
         display: inline-block;
-        width: 42%;
+        width: 85%;
         vertical-align: top;
         margin-right: 5%
     }
@@ -64,4 +64,5 @@
         margin-bottom: 6%;
     }
 }
+
 
