@@ -1,28 +1,149 @@
-﻿.Konsultationsrubrik {
-    margin-top:50%;
-    position: relative;
-    left: 140%;
-    transform: translate(-50%, -50%);
-    text-align:center;
-    font-family: 'Sofia Sans'
+﻿@media screen and (max-width: 767px) {
+    body{
+        overflow-x:hidden;
+    }
+        .Konsultationsrubrik {
+        margin-top: 80%;
+        position: relative;
+        margin-left: 30%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-family: 'Sofia Sans';
+        font-weight: 300;
+        font-size: 130%;
+    }
+
+    form {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .form-container {
+        font-weight: 500 !important;
+        padding: 20px;
+        width: 380px;
+        border-radius: 10px;
+    }
+
+    label {
+        text-align: left;
+    }
+    input{
+        width: 90%;
+        margin-top:2%;
+        border: 1px solid;
+    }
+    textarea {
+        width: 90%;
+        border: 1px solid;
+    }
+        input[id="comment"] {
+            height: 100%;
+            width: 80%;
+        }
+
+    .bekräftaknapp {
+        margin-left: 8%;
+        margin-top: 10%;
+        width: 80%;
+    }
+}  
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .Konsultationsrubrik {
+        margin-top: 60%;
+        position: relative;
+        margin-left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Sofia Sans';
+        margin-right: -4%;
+        text-align: center;
+        font-weight: 300;
+        font-size: 130%;
+    }
+    h3 {
+        text-align: center;
+        font-size: 250%;
+    }
+
+    form {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .form-container {
+        font-weight: 500 !important;
+        border: 1px solid;
+        padding: 20px;
+        width: 400px;
+        border-radius: 10px;
+    }
+
+    label {
+        text-align: left;
+    }
+    input {
+        width: 90%;
+        margin-top: 2%;
+        border: 1px solid;
+    }
+    textarea {
+        width: 90%;
+        border: 1px solid;
+    }
+    input[id="comment"] {
+        height: 100%;
+    }
+
+    .bekräftaknapp {
+        margin-left:10%;
+        margin-top: 10%;
+        width: 80%;
+    }
 }
-form {
-    flex-direction: column;
-    display: flex;
+@media screen and (min-width: 1024px) {
+    .Konsultationsrubrik {
+        margin-top: 55%;
+        position: relative;
+        left: 140%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-family: 'Sofia Sans';
+    }
+    form {
+        flex-direction: column;
+        display: flex;
+    }
+    .form-container {
+        font-weight: 500 !important;
+        border: 1px solid;
+        padding: 20px;
+        width: 400px;
+        border-radius: 10px;
+    }
+    label {
+        text-align: left;
+    }
+
+    input {
+        width: 90%;
+        border: 1px solid;
+    }
+
+    textarea {
+        width: 90%;
+        border: 1px solid;
+    }
+
+    input[id="comment"] {
+        height: 100%;
+        width: 80%;
+    }
+    .bekräftaknapp {
+        margin-left: 10%;
+        margin-top: 10%;
+        width: 80%;
+    }
 }
-.form-container {
-    border: 1px solid #ccc;
-    padding: 20px;
-    width: 400px;
-    border-radius: 10px;
-}
-label{
-    text-align:left;
-}
-input[id="comment"] {
-    height: 100%;
-}
-.bekräftaknapp {
-    margin-top: 10%;
-    width: 80%;
+legend {
+    font-size: 210%;
 }

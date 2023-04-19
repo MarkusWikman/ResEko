@@ -32,7 +32,7 @@ a {
     text-decoration: none;
 }
 
-    a:hover {
+    body, a:hover {
         color: #000000;
     }
 
@@ -68,6 +68,7 @@ a {
     font-size: 100%;
 }
 
+
 /*Mobile*/
 @media screen and (max-width: 768px) {
     .container-fluid {
@@ -95,8 +96,17 @@ a {
         align-items: flex-start;
         font-family: 'Sofia Sans';
         line-height: 1em;
-        position: center;
+    }
+    footer{
+        margin-top: 15%;
     }
 
+}
+@media screen and (min-width: 1024px){
+    .container {
+        gap: 3em;
+        margin-top: 2em;
+        display: flex;
+    }
 }
 
