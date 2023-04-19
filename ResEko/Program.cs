@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using ResEko.Models;
+
 namespace ResEko
 {
     public class Program
@@ -6,8 +9,15 @@ namespace ResEko
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            var connString = builder.Configuration
+    .GetConnectionString("DefaultConnection");
+
+
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            builder.Services.AddDbContext<ApplicationContext>
+    (o => o.UseSqlServer(connString));
 
             var app = builder.Build();
 

@@ -1,0 +1,45 @@
+﻿@media screen and (min-width: 1024px) {
+
+    .Tack {
+        font-family: 'Sofia Sans';
+        display: block;
+        text-align: center;
+        padding: 200px;
+        margin-left: 15em;
+        margin-top: -10em;
+    }
+
+    .företagslogga {
+        font-family: 'Nico Moji';
+        font-size: 220%;
+        color: #5F396A;
+    }
+}
+@media screen and (max-width: 767px) {
+    .Tack {
+        font-family: 'Sofia Sans';
+        /*margin-right: 10px;*/
+        text-align:center;
+        padding: 100px;
+    }
+
+    .företagslogga {
+        font-family: 'Nico Moji';
+        font-size: 220%;
+        color: #5F396A;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .Tack {
+        font-family: 'Sofia Sans';
+        /*margin-right: 10px;*/
+        text-align: center;
+        padding: 250px;
+    }
+
+    .företagslogga {
+        font-family: 'Nico Moji';
+        font-size: 220%;
+        color: #5F396A;
+    }
+}
