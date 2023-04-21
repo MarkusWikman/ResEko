@@ -37,10 +37,6 @@
         width: 90%;
         border: 1px solid;
     }
-        input[id="comment"] {
-            height: 100%;
-            width: 80%;
-        }
 
     .bekräftaknapp {
         margin-left: 8%;
@@ -90,9 +86,6 @@
         width: 90%;
         border: 1px solid;
     }
-    input[id="comment"] {
-        height: 100%;
-    }
 
     .bekräftaknapp {
         margin-left:10%;
@@ -102,7 +95,7 @@
 }
 @media screen and (min-width: 1024px) {
     .Konsultationsrubrik {
-        margin-top: 55%;
+        margin-top: 80%;
         position: relative;
         left: 140%;
         transform: translate(-50%, -50%);
@@ -132,12 +125,9 @@
     textarea {
         width: 90%;
         border: 1px solid;
+        height: 4em;
     }
 
-    input[id="comment"] {
-        height: 100%;
-        width: 80%;
-    }
     .bekräftaknapp {
         margin-left: 10%;
         margin-top: 10%;
@@ -147,3 +137,6 @@
 legend {
     font-size: 210%;
 }
+
+
+

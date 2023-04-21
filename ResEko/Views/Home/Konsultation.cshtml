@@ -16,6 +16,20 @@
                     <input asp-for="Phonenumber" />
                     <label asp-for="Comment">Kommentar</label>
                     <textarea asp-for="Comment"></textarea>
+                    <div>
+                    <label>Jag vill ha hjälp med</label>
+                    <br />
+                    <hr />
+                    <label>
+                        <input type="radio" asp-for="ResOrRed" value="Restaurang"/>
+                        Restaurang
+                    </label>
+                    <label>
+                        <input type="radio" asp-for="ResOrRed" value="Redovisning" />
+                        Redovisning
+                    </label>
+                    <hr />
+                    </div>
                 </div>
             </fieldset>
             <input class="bekräftaknapp btn btn-primary btn-lg" type="submit" value="Bekräfta" />
