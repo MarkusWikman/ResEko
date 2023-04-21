@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Memory;
 using ResEko.Models;
 //using ResEko.Views.Home;
 using System;
@@ -11,8 +12,10 @@ namespace ResEko.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly ApplicationContext _dbContext;
-        public HomeController(ILogger<HomeController> logger, ApplicationContext dbContext)
+        private readonly IMemoryCache _memoryCache;
+        public HomeController(ILogger<HomeController> logger, ApplicationContext dbContext, IMemoryCache memoryCache)
         {
+            _memoryCache = memoryCache;
             _logger = logger;
             _dbContext = dbContext;
         }
@@ -34,18 +37,21 @@ namespace ResEko.Controllers
         {
             return View();
         }
-        [HttpPost("/Konsultation")]
 
+        [HttpPost("/Konsultation")]
         public IActionResult Konsultation(Customer customer)
         {
+
             if (ModelState.IsValid)
             {
                 _dbContext.Customers.Add(customer);
                 _dbContext.SaveChanges();
+
                 return RedirectToAction(nameof(Tack));
             }
             return View();
         }
+        [HttpGet("/Tack")]
         public IActionResult Tack()
         {
             return View();
