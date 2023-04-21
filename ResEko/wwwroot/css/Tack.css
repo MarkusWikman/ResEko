@@ -1,4 +1,7 @@
-﻿@media screen and (min-width: 1024px) {
+﻿a:hover {
+    color: #5F396A;
+}
+@media screen and (min-width: 1024px) {
 
     .Tack {
         font-family: 'Sofia Sans';
@@ -11,7 +14,7 @@
 
     .företagslogga {
         font-family: 'Nico Moji';
-        font-size: 220%;
+        font-size: 380%;
         color: #5F396A;
     }
 }
