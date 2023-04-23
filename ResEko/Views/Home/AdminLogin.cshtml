@@ -1,0 +1,13 @@
+﻿@model LoginVM
+
+<form method="post" asp-action="AdminLogin" class="mt-3">
+    <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" name="Email" class="form-control" id="email" required>
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" name="Password" class="form-control" id="password" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+</form>

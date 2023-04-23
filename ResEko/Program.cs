@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using ResEko.Models;
 
@@ -15,9 +16,20 @@ namespace ResEko
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddScoped<AccountService>();
 
             builder.Services.AddDbContext<ApplicationContext>
     (o => o.UseSqlServer(connString));
+
+            // 1. Registera identity-klasserna och vilken DbContext som ska användas
+            builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
+                .AddEntityFrameworkStores<ApplicationContext>()
+                .AddDefaultTokenProviders();
+
+            // 2. Specificera att cookies ska användas och URL till inloggnings-sidan
+            builder.Services.ConfigureApplicationCookie(
+                o => o.LoginPath = "/Adminlogin");
+
 
             var app = builder.Build();
 
@@ -33,7 +45,6 @@ namespace ResEko
             app.UseStaticFiles();
 
             app.UseRouting();
-
             app.UseAuthorization();
 
             app.MapControllerRoute(
