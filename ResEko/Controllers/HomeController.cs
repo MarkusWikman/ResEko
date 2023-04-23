@@ -29,7 +29,6 @@ namespace ResEko.Controllers
             _userManager = userManager;
             _signInManager = signInManager;
         }
-        [HttpGet("CreateAdmin")]
         public async Task<IActionResult> CreateAdmin()
         {
             // Check if the "Admin" role exists, and create it if necessary
