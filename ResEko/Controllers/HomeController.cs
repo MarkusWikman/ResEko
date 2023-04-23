@@ -5,7 +5,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Memory;
 using ResEko.Models;
 using ResEko.Views.Home;
-//using ResEko.Views.Home;
 using System;
 using System.Diagnostics;
 using System.Net;
@@ -29,6 +28,8 @@ namespace ResEko.Controllers
             _userManager = userManager;
             _signInManager = signInManager;
         }
+
+        //Action metod för att skapa en admin. Bara lägg till en URL till den. Och sedan gå till den URLen så kommer en ny admin att skapas.
         public async Task<IActionResult> CreateAdmin()
         {
             // Check if the "Admin" role exists, and create it if necessary
@@ -111,15 +112,6 @@ namespace ResEko.Controllers
         [HttpPost("/AdminLogin")]
         public async Task<IActionResult> LoginAsync(LoginVM loginVM)
         {
-            //var result = await _accountService.LoginAsync(loginVM);
-
-            //if (result.Succeeded)
-            //{
-            //    return RedirectToAction(nameof(Admin));
-            //}
-
-            //ModelState.AddModelError("", "Invalid login attempt");
-            //return View(nameof(AdminLogin));
 
             var adminUser = await _userManager.FindByNameAsync(loginVM.Email);
             if (adminUser == null || !await _userManager.IsInRoleAsync(adminUser, "Admin"))
@@ -137,9 +129,22 @@ namespace ResEko.Controllers
             return View(nameof(AdminLogin));
         }
         [Authorize(Roles = "Admin")]
+        [HttpGet]
         public IActionResult Admin()
         {
-            return View();
+            var customers = _dbContext.Customers.ToList();
+            return View(customers);
+        }
+        [HttpPost("/Customer/Delete/{customerId}")]
+        public ActionResult Delete(int customerId)
+        {
+            var customer = _dbContext.Customers.Find(customerId);
+            if (customer != null)
+            {
+                _dbContext.Customers.Remove(customer);
+                _dbContext.SaveChanges();
+            }
+            return RedirectToAction(nameof(Admin));
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
