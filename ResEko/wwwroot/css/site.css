@@ -7,14 +7,7 @@
     font-family: 'Sofia Sans';
     src: url('../fonts/SofiaSans-VariableFont_wght.ttf') format('truetype');
 }
-/*p, h1, h2{
-    color: white;
-}
-img {
-    width: 100%;
-    margin-top: -4.3%;
-    filter: brightness(1.5);
-}*/
+
 p {
     font-family: 'Sofia Sans';
     font-size: 1.14em;
@@ -32,10 +25,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-/*    background-image: url('../images/gettyrf_578188633.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;*/
+
 }
 
 a {
@@ -49,15 +39,23 @@ a {
 
 .ResEkoStyle {
     font-family: 'Nico Moji';
-    font-size: 2.2em;
+    font-size: 3.2em;
     color: #5F396A;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    text-align:center;
 }
-
-.OmOssStyle {
+.socialamedier {
     font-weight: 800;
-    color: #5F396A;
+    color: white;
     font-family: 'Sofia Sans';
-    text-align: left;
+    text-align: right;
+    margin-right: 1em;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
 }
 
 .footerStyle {
@@ -78,22 +76,27 @@ a {
 .footer-section, p {
     font-size: 100%;
 }
+.linkedin{
+    width:3em;
+    height: 2em;
+}
 
-
-/*Mobile*/
-@media screen and (max-width: 768px) {
+/*/*Mobile*/
+@media screen and (max-width: 767px) {
     .container-fluid {
         align-content: center;
     }
-
+    h5{
+        font-size:100%;
+    }
     .footerStyle {
-        display: block;
+        /*display:contents;*/
         justify-content: space-between;
         align-items: flex-start;
         font-family: 'Sofia Sans';
         line-height: 0.6em;
         position:relative;
-        bottom: 0;
+        font-size: 50%;
     }
 }
 /*Ipad*/
@@ -107,9 +110,6 @@ a {
         align-items: flex-start;
         font-family: 'Sofia Sans';
         line-height: 1em;
-    }
-    footer{
-        margin-top: 15%;
     }
 
 }

@@ -1,5 +1,4 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -12,10 +11,15 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="ResEkoStyle" asp-area="" asp-controller="Home" asp-action="Index">ResEko</a>
-                <a class="OmOssStyle" asp-area="" asp-controller="Home" asp-action="About">Om oss</a>
+        <nav>
+            <div class="header-container">
+                <div class="ResEkoStyle">
+                <a asp-area="" asp-controller="Home" asp-action="Index">ResEko</a>
+                </div>
+                <div class="socialamedier">
+                <a asp-area="" asp-controller="Home" asp-action="About">Om oss</a>
+                @*<a href="https://www.linkedin.com/in/m%C3%A5ns-wikman-a66290257/"><img class="linkedin" src="~/images/li-in-bug.png" /> </a>*@
+                </div>
             </div>
         </nav>
     </header>

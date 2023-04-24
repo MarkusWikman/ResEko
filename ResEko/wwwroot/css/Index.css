@@ -1,5 +1,18 @@
 ﻿/*Mobile*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+    body {
+        background-image: url('../images/stockholmdark.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        /*background-size: cover;*/
+    }
+
+    p, h1, h2, h3, h5 {
+        text-align: center;
+        color: white;
+        text-shadow: 1px 1px rgba(0, 0, 0, 0.7);
+        font-weight: 800;
+    }
     .experthjalp {
         font-size: 270%;
     }
@@ -14,22 +27,36 @@
 }
 /*Ipad*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        background-image: url('../images/stockholmdark.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+
+    p, h1, h2, h3, h5 {
+        text-align:center;
+        color: white;
+        text-shadow: 1px 1px rgba(0, 0, 0, 0.7);
+        font-weight: 800;
+    }
     .experthjalp {
         font-size: 430%;
-    }
-    body {
-        text-align: center;
     }
 
     .pText {
         font-size: 180%
     }
+
     h2 {
         font-size: 240%
     }
-    .container{
-        display:block;
+
+    .container {
+        /*display: block;*/
     }
+
     .moreSpace {
         margin-bottom: 10%;
     }
@@ -40,9 +67,20 @@
 }
 /*Computer*/
 @media screen and (min-width: 1024px) {
+    header {
+        background-size: cover;
+        margin-bottom: -2%;
+    }
     body {
         text-align: center;
-        height: 3em;
+        background-size: cover;
+    }
+    p, h1, h2, h3, h5 {
+        color: black;
+        text-shadow: 1px 1px rgba(0, 0, 0, 0.7);
+    }
+    p{
+        font-weight:800;
     }
 
     html, body {
@@ -64,5 +102,3 @@
         margin-bottom: 6%;
     }
 }
-
-
