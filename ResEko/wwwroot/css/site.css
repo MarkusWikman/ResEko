@@ -7,7 +7,14 @@
     font-family: 'Sofia Sans';
     src: url('../fonts/SofiaSans-VariableFont_wght.ttf') format('truetype');
 }
-
+/*p, h1, h2{
+    color: white;
+}
+img {
+    width: 100%;
+    margin-top: -4.3%;
+    filter: brightness(1.5);
+}*/
 p {
     font-family: 'Sofia Sans';
     font-size: 1.14em;
@@ -25,6 +32,10 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+/*    background-image: url('../images/gettyrf_578188633.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;*/
 }
 
 a {
