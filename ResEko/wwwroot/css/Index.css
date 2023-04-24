@@ -68,10 +68,12 @@
 /*Computer*/
 @media screen and (min-width: 1024px) {
     header {
+        /*background-image: url('../images/sthlmskyline.png');*/
         background-size: cover;
         margin-bottom: -2%;
     }
     body {
+        /*background-image: url('../images/sthlmskyline.png');*/
         text-align: center;
         background-size: cover;
     }
