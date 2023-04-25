@@ -8,12 +8,15 @@
                 <legend>Konsultation</legend>
                 <p>Ange dina uppgifter nedan så hör vi av oss så snart vi kan!</p>
                 <div style="text-align:left;">
-                    <label asp-for="Name">Namn</label>
+                    <label asp-for="Name">Namn*</label>
                     <input asp-for="Name" />
-                    <label asp-for="Email">Email</label>
+                    <label asp-for="Email">Email*</label>
                     <input asp-for="Email" />
-                    <label asp-for="Phonenumber">Telefonnummer</label>
-                    <input asp-for="Phonenumber" />
+                    <label asp-for="Phonenumber">Telefonnummer*</label>
+                    <input asp-for="Phonenumber"/>
+                    <br />
+                    <span style="color:red;" asp-validation-for="Phonenumber"></span>
+                    <br />
                     <label asp-for="Comment">Kommentar</label>
                     <textarea asp-for="Comment"></textarea>
                     <div>

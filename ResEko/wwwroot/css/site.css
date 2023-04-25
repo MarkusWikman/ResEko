@@ -7,9 +7,11 @@
     font-family: 'Sofia Sans';
     src: url('../fonts/SofiaSans-VariableFont_wght.ttf') format('truetype');
 }
+
 header a:hover {
     color: #5F396A;
 }
+
 p {
     font-family: 'Sofia Sans';
     font-size: 1.14em;
@@ -19,6 +21,7 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
     body, a:hover {
         color: #000000;
     }
@@ -29,6 +32,7 @@ a {
     color: #5F396A;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
 }
+
 .socialamedier {
     font-weight: 800;
     color: black;
@@ -36,10 +40,12 @@ a {
     text-align: right;
     margin-right: 1em;
 }
+
 .header-container {
     display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
+    margin-bottom: 8%;
 }
 
 .footerStyle {
@@ -54,8 +60,9 @@ a {
     flex-direction: column;
     align-items: center;
 }
-.linkedin{
-    width:3em;
+
+.linkedin {
+    width: 3em;
     height: 2em;
 }
 
@@ -64,9 +71,11 @@ a {
     .header-container {
         margin-bottom: 1em;
     }
-    h5{
-        font-size:170%;
+
+    h5 {
+        font-size: 170%;
     }
+
     .footerStyle {
         font-family: 'Sofia Sans';
         line-height: 0.6em;
@@ -81,10 +90,10 @@ a {
         font-size: 70%;
     }
 }
-@media screen and (min-width: 1024px){
+
+@media screen and (min-width: 1024px) {
     .container {
         gap: 3em;
         display: flex;
     }
 }
-

@@ -14,11 +14,13 @@
         <nav>
             <div class="header-container">
                 <div class="ResEkoStyle">
-                <a asp-area="" asp-controller="Home" asp-action="Index">ResEko</a>
+                    <a asp-area="" asp-controller="Home" asp-action="Index">ResEko</a>
                 </div>
                 <div class="socialamedier">
-                <a asp-area="" asp-controller="Home" asp-action="About">Om oss</a>
-                @*<a href="https://www.linkedin.com/in/m%C3%A5ns-wikman-a66290257/"><img class="linkedin" src="~/images/li-in-bug.png" /> </a>*@
+                    <a asp-controller="Home" asp-action="Konsultation" type="button" class="Kontaktaoss">Kontakt</a>
+                    ||
+                    <a asp-area="" asp-controller="Home" asp-action="About">Om oss</a>
+                    @*<a href="https://www.linkedin.com/in/m%C3%A5ns-wikman-a66290257/"><img class="linkedin" src="~/images/li-in-bug.png" /> </a>*@
                 </div>
             </div>
         </nav>
@@ -29,28 +31,28 @@
         </main>
     </div>
 
-        <footer >
-            <hr style="position:sticky;" />
-            <div class="container footerStyle">
-                <div class="footer-section">
-                    <h5>Adress</h5>
-                    <p>Solnavägen 20</p>
-                    <p>112 48 Solna</p>
-                </div>
-                <div class="footer-section">
-                    <h5>Info</h5>
-                    <p>Innehar F-skattebevis</p>
-                </div>
-                <div class="footer-section">
-                    <h5>Bankgiro</h5>
-                    <p>474-1831</p>
-                </div>
-                <div class="footer-section">
-                    <h5>E-post</h5>
-                    <p>Info@ResEko.se</p>
-                </div>
+    <footer>
+        <hr style="position:sticky;" />
+        <div class="container footerStyle">
+            <div class="footer-section">
+                <h5>Adress</h5>
+                <p>Solnavägen 20</p>
+                <p>112 48 Solna</p>
             </div>
-        </footer>
+            <div class="footer-section">
+                <h5>Info</h5>
+                <p>Innehar F-skattebevis</p>
+            </div>
+            <div class="footer-section">
+                <h5>Bankgiro</h5>
+                <p>474-1831</p>
+            </div>
+            <div class="footer-section">
+                <h5>E-post</h5>
+                <p>Info@ResEko.se</p>
+            </div>
+        </div>
+    </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

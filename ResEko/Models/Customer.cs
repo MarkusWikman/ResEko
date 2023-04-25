@@ -12,10 +12,12 @@ namespace ResEko.Models
     {
         public int Id { get; set; }
         public string ? Name { get; set; }
+        [EmailAddress]
         public string Email { get; set; }
+        [Required(ErrorMessage = "Var god ange ett telefonnummer")]
+        [Phone(ErrorMessage = "Var god ange ett giltigt telefonnummer")]
         public string Phonenumber { get; set; }
         public string ? Comment { get; set; }
-        [Display(Name = "")]
         public ResOrRed ResOrRed { get; set; }
 
     }
