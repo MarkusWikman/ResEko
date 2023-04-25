@@ -13,26 +13,10 @@ p {
     font-size: 1.14em;
 }
 
-html {
-    position: relative;
-    min-height: 100%;
-}
-
-html, body {
-    height: 100%;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-
-}
-
 a {
     color: inherit;
     text-decoration: none;
 }
-
     body, a:hover {
         color: #000000;
     }
@@ -42,7 +26,6 @@ a {
     font-size: 3.2em;
     color: #5F396A;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
-    text-align:center;
 }
 .socialamedier {
     font-weight: 800;
@@ -50,7 +33,6 @@ a {
     font-family: 'Sofia Sans';
     text-align: right;
     margin-right: 1em;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
 }
 .header-container {
     display: flex;
@@ -61,10 +43,7 @@ a {
 .footerStyle {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
     font-family: 'Sofia Sans';
-    position: relative;
-    bottom: 0;
 }
 
 .footer-section {
@@ -73,9 +52,6 @@ a {
     flex-direction: column;
     align-items: center;
 }
-.footer-section, p {
-    font-size: 100%;
-}
 .linkedin{
     width:3em;
     height: 2em;
@@ -83,40 +59,29 @@ a {
 
 /*/*Mobile*/
 @media screen and (max-width: 767px) {
-    .container-fluid {
-        align-content: center;
+    .header-container {
+        margin-bottom: 1em;
     }
     h5{
-        font-size:100%;
+        font-size:170%;
     }
     .footerStyle {
-        /*display:contents;*/
-        justify-content: space-between;
-        align-items: flex-start;
         font-family: 'Sofia Sans';
         line-height: 0.6em;
-        position:relative;
         font-size: 50%;
     }
 }
-/*Ipad*/
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .container-fluid {
-        align-content: center;
-    }
-    .footerStyle {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        font-family: 'Sofia Sans';
-        line-height: 1em;
-    }
 
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .footerStyle {
+        font-family: 'Sofia Sans';
+        font-size: 70%;
+    }
 }
 @media screen and (min-width: 1024px){
     .container {
         gap: 3em;
-        margin-top: 2em;
         display: flex;
     }
 }

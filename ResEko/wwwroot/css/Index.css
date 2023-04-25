@@ -1,77 +1,52 @@
 ﻿/*Mobile*/
 @media screen and (max-width: 767px) {
-    body {
-        background-image: url('../images/stockholmdark.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        /*background-size: cover;*/
-    }
-
+    /*body {*/
+        /*background-image: url('../images/stockholmdark.jpg');*/
+/*        background-position: center;
+        background-repeat: no-repeat;*/
+    /*}*/
     p, h1, h2, h3, h5 {
         text-align: center;
-        color: white;
-        text-shadow: 1px 1px rgba(0, 0, 0, 0.7);
-        font-weight: 800;
+        color: black;
+        font-weight: 500;
     }
-    .experthjalp {
-        font-size: 270%;
-    }
-
-    body {
-        text-align: center;
-    }
-
     .experthjalp {
         font-size: 280%;
     }
 }
-/*Ipad*/
+
+/*Tablet*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    body {
+/*    body {
         background-image: url('../images/stockholmdark.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         height: 100%;
-    }
-
+    }*/
     p, h1, h2, h3, h5 {
         text-align:center;
-        color: white;
-        text-shadow: 1px 1px rgba(0, 0, 0, 0.7);
-        font-weight: 800;
+        color: black;
+        font-weight: 500;
+    }
+    p{
+        font-size: 140%
+    }
+    h2 {
+        font-size: 240%
     }
     .experthjalp {
         font-size: 430%;
     }
-
-    .pText {
-        font-size: 180%
-    }
-
-    h2 {
-        font-size: 240%
-    }
-
-    .container {
-        /*display: block;*/
-    }
-
-    .moreSpace {
-        margin-bottom: 10%;
-    }
-
-    .somLonarSig {
-        margin-bottom: 6%;
-    }
 }
+
 /*Computer*/
 @media screen and (min-width: 1024px) {
-    header {
+    /*header {*/
         /*background-image: url('../images/sthlmskyline.png');*/
-        background-size: cover;
+        /*background-size: cover;
         margin-bottom: -2%;
-    }
+    }*/
     body {
         /*background-image: url('../images/sthlmskyline.png');*/
         text-align: center;
@@ -79,27 +54,11 @@
     }
     p, h1, h2, h3, h5 {
         color: black;
-        text-shadow: 1px 1px rgba(0, 0, 0, 0.7);
+        font-weight:500;
     }
-    p{
-        font-weight:800;
-    }
-
-    html, body {
-        height: 100%;
-    }
-
-    .left-column, .right-column {
-        display: inline-block;
-        width: 85%;
-        vertical-align: top;
-        margin-right: 5%
-    }
-
     .experthjalp {
         font-size: 400%;
     }
-
     .somLonarSig {
         margin-bottom: 6%;
     }
