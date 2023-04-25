@@ -22,7 +22,7 @@
                 </div>
                 <form method="post" action="@Url.Action("Delete", "Customer", new { id = kund.Id })">
                     <input type="hidden" name="customerId" value="@kund.Id" />
-                    <button type="submit" class="btn-delete" onclick="confirmDelete(@kund.Id)">Delete</button>
+                    <button type="submit" class="btn-delete" onclick="confirmDelete(@kund.Id)">Radera</button>
                 </form>
             </li>
         }

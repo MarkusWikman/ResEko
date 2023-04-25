@@ -10,6 +10,7 @@
         width: 100%;
         margin-top: -13.9%;
         opacity: 0.7;
+        border-radius: 15%;
     }
 
     .textOnImg {
@@ -84,6 +85,7 @@
         width: 100%;
         margin-top: -13.9%;
         opacity: 0.7;
+        border-radius: 15%;
     }
 
     .textOnImg {
@@ -183,6 +185,7 @@
         width: 100%;
         margin-top: -6.9%;
         opacity: 0.7;
+        border-radius: 15%;
     }
 
     .RestaurangText {
@@ -256,10 +259,10 @@
     }
 
     img {
-        /*display: none;*/
         width: 100%;
-        margin-top: -7.2%;
-        opacity: 0.7;
+        margin-top: -5.7%;
+        opacity: 0.6;
+        border-radius: 15%;
     }
 
     h3 {

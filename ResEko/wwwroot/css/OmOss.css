@@ -1,4 +1,9 @@
-﻿@media screen and (max-width: 768px){
+﻿img {
+    border-radius: 10px; /* adds rounded corners to the image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* adds a subtle shadow effect */
+}
+
+@media screen and (max-width: 768px){
     .centered {
         opacity: 1;
         width: 40%;

@@ -7,7 +7,9 @@
     font-family: 'Sofia Sans';
     src: url('../fonts/SofiaSans-VariableFont_wght.ttf') format('truetype');
 }
-
+header a:hover {
+    color: #5F396A;
+}
 p {
     font-family: 'Sofia Sans';
     font-size: 1.14em;

@@ -28,15 +28,17 @@
     label {
         text-align: left;
     }
-    input{
+    input {
         width: 90%;
-        margin-top:2%;
+        margin-top: 2%;
         border: 1px solid;
+        border-radius: 5px;
     }
     textarea {
         width: 90%;
         border: 1px solid;
         resize: none;
+        border-radius: 5px;
     }
 
     .bekräftaknapp {
@@ -82,11 +84,13 @@
         width: 90%;
         margin-top: 2%;
         border: 1px solid;
+        border-radius: 5px;
     }
     textarea {
         width: 90%;
         border: 1px solid;
         resize: none;
+        border-radius: 5px;
     }
 
     .bekräftaknapp {
@@ -122,13 +126,15 @@
     input {
         width: 90%;
         border: 1px solid;
+        border-radius: 5px;
     }
 
     textarea {
         width: 90%;
         border: 1px solid;
         height: 4em;
-        resize:none;
+        resize: none;
+        border-radius: 5px;
     }
 
     .bekräftaknapp {
