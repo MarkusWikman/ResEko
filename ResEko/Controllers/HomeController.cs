@@ -88,6 +88,18 @@ namespace ResEko.Controllers
         {
             return View();
         }
+        public IActionResult Bokföring()
+        {
+            return View();
+        }
+        public IActionResult Rådgivning()
+        {
+            return View();
+        }
+        public IActionResult Redovisningutbildning()
+        {
+            return View();
+        }
         [HttpGet("/Konsultation")]
         public IActionResult Konsultation()
         {
