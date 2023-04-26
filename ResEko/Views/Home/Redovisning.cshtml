@@ -8,6 +8,7 @@
     <p>Nullam vulputate sed nisi ut viverra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean quis elementum erat. </p>
     <a asp-controller="Home" asp-action="Konsultation" type="button" class="btn btn-primary btn-lg">Begär Gratis Konsultation</a>
 </div>
+<div class="smooth-scroll animateOnScroll">
 <div class="RestaurangText column">
     <h3>Redovisning</h3>
     <p>Ut justo massa, consequat at eros vitae, semper fermentum erat. Praesent semper laoreet velit et lacinia. Nullam porttitor leo tempus elit auctor varius. Donec nec lacus id enim suscipit pharetra. Nullam efficitur ut erat vel tempor.</p>
@@ -19,15 +20,15 @@
 <div class="container">
     <div class="box">
         <a asp-controller="Home" asp-action="Bokföring">
-        <p>Bokföring</p>
-        <img class="restaurantimg"src="~/images/accounting.png" />
-        <div class="listclass">
-            <ul>
-                <li>Transaktioner</li>
-                <li>Fakturor</li>
-                <li>Dokumentering</li>
-            </ul>
-        </div>
+            <p>Bokföring</p>
+            <img class="restaurantimg" src="~/images/accounting.png" />
+            <div class="listclass">
+                <ul>
+                    <li>Transaktioner</li>
+                    <li>Fakturor</li>
+                    <li>Dokumentering</li>
+                </ul>
+            </div>
         </a>
         <div class="mobile-only">
             <hr />
@@ -35,15 +36,15 @@
     </div>
     <div class="box">
         <a asp-controller="Home" asp-action="Rådgivning">
-        <p>Rådgivning</p>
-        <img class="restaurantimg"src="~/images/financial-advisor.png" />
-        <div class="listclass">
-            <ul>
-                <li>Finansiella frågor</li>
-                <li>Budgetering</li>
-                <li>Investeringar</li>
-            </ul>
-        </div>
+            <p>Rådgivning</p>
+            <img class="restaurantimg" src="~/images/financial-advisor.png" />
+            <div class="listclass">
+                <ul>
+                    <li>Finansiella frågor</li>
+                    <li>Budgetering</li>
+                    <li>Investeringar</li>
+                </ul>
+            </div>
         </a>
         <div class="mobile-only">
             <hr />
@@ -51,15 +52,34 @@
     </div>
     <div class="box">
         <a asp-controller="Home" asp-action="Redovisningutbildning">
-        <p>Utbildning<p>
-            <img class="educationimg" src="~/images/education.png" />
-            <div class="listclass">
-                <ul>
-                    <li>Utveckling</li>
-                    <li>Ekonomi ledning</li>
-                    <li>Workshops</li>
-                </ul>
-            </div>
-            </a>
+            <p>Utbildning<p>
+                <img class="educationimg" src="~/images/education.png" />
+                <div class="listclass">
+                    <ul>
+                        <li>Utveckling</li>
+                        <li>Ekonomi ledning</li>
+                        <li>Workshops</li>
+                    </ul>
+                </div>
+        </a>
     </div>
 </div>
+</div>
+
+<script>
+    function animateOnScroll() {
+        const elements = document.querySelectorAll('.smooth-scroll');
+        elements.forEach(element => {
+            const elementTop = element.getBoundingClientRect().top;
+            const elementBottom = element.getBoundingClientRect().bottom;
+            const viewportHeight = window.innerHeight;
+            if (elementTop < viewportHeight && elementBottom >= 0) {
+                element.classList.add('animate');
+            } else {
+                element.classList.remove('animate');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', animateOnScroll);
+</script>

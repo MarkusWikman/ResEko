@@ -245,6 +245,15 @@
 
 /*Computer*/
 @media screen and (min-width: 1024px) {
+    .animateOnScroll {
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+        .animateOnScroll.animate {
+            opacity: 1;
+        }
+
     .textOnImg {
         position: absolute;
         top: 68%;
@@ -258,6 +267,7 @@
         margin-top: 2em;
         text-align: center;
     }
+
     .mobile-only {
         display: none;
     }
@@ -291,6 +301,7 @@
         border: 1px solid #ddd;
         transition: all 0.2s ease-in-out;
     }
+
         .box:hover {
             width: 19em;
             height: 19em;
