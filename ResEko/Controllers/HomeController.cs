@@ -72,6 +72,18 @@ namespace ResEko.Controllers
         {
             return View();
         }
+        public IActionResult Restaurangverksamhet()
+        {
+            return View();
+        }
+        public IActionResult Konceptinnovation()
+        {
+            return View();
+        }
+        public IActionResult Restaurangutbildning()
+        {
+            return View();
+        }
         public IActionResult Redovisning()
         {
             return View();
