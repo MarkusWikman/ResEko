@@ -30,6 +30,7 @@ namespace ResEko.Controllers
         }
 
         //Action metod för att skapa en admin. Bara lägg till en URL till den. Och sedan gå till den URLen så kommer en ny admin att skapas.
+        [HttpGet("/Create")]
         public async Task<IActionResult> CreateAdmin()
         {
             // Check if the "Admin" role exists, and create it if necessary
