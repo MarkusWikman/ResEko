@@ -1,2 +1,55 @@
-﻿body {
+﻿body{
+    font-family:'Sofia Sans';
+}
+header{
+    height: 100px;
+}
+hr{
+    color:gold;
+}
+.image-container {
+    position: relative;
+}
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+}
+img {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    text-align:center;
+}
+.breadcrumbs {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    margin-top: 20px;
+    color: white;
+}
+
+    .breadcrumbs a {
+        text-decoration: none;
+    }
+
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+
+@media screen and (max-width: 767px){
+    .text-container, span{
+        font-size: 50%;
+        width: 100%
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
 }
