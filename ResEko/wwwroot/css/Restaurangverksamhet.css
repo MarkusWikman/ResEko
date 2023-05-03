@@ -1,38 +1,41 @@
-﻿body{
-    font-family:'Sofia Sans';
+﻿body {
+    font-family: 'Sofia Sans';
 }
-header{
+
+header {
     height: 100px;
 }
-hr{
-    color:gold;
+
+img {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
 }
+
+.TextUnderBild{
+    text-align:center;
+    margin-top:2em;
+}
+
 .image-container {
     position: relative;
+    display: inline-block;
 }
-.text-container {
+
+.image-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 70%;
-    padding: 20px;
-    box-sizing: border-box;
-    color: white;
     text-align: center;
+    color: #ffffff;
+    z-index: 1;
 }
-img {
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 10px;
-    text-align:center;
-}
+
 .breadcrumbs {
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 24px;
-    margin-top: 20px;
     color: white;
 }
 
@@ -44,12 +47,47 @@ img {
             text-decoration: underline;
         }
 
-@media screen and (max-width: 767px){
-    .text-container, span{
-        font-size: 50%;
-        width: 100%
+/*Phone*/
+@media screen and (max-width: 767px) {
+    img {
+        width: 90%;
+        margin-left: 1em;
+    }
+    .image-text{
+        font-size: 60%;
+        width: 90%;
+    }
+    h2 {
+        font-size: 165%;
+    }
+    .breadcrumbs{
+        font-size:80%;
+    }
+    .TextUnderBild {
+        font-size: 70%;
     }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px){
 
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    img {
+        width: 90%;
+        margin-left: 2em;
+    }
+}
+
+/*Computer*/
+@media screen and (min-width: 1024px) {
+    img {
+        margin-left: 8.5em;
+    }
+    .image-text{
+        margin-left: 4em;
+    }
+    .breadcrumbs {
+        margin-left: 2.5em;
+        font-size: 10px;
+        font-size: 20px;
+        margin-top: 20px;
+    }
 }
