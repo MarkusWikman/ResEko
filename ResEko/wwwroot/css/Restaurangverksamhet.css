@@ -6,14 +6,18 @@ header {
     height: 100px;
 }
 
-.huvudbild {
+
+img {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 10px;
 }
+
 .menyinnovation-container {
     display: flex;
-    margin-top: 2em;
+    margin-top: 8em;
+    margin-bottom: 8em;
 }
+
 .TextUnderBild {
     text-align: center;
     margin-top: 2em;
@@ -72,11 +76,19 @@ header {
     .menyinnovation-container {
         font-size: 60%;
     }
+    .DriftoptimeringsBild{
+        width: 50%;
+        height: 10em;
+    }
     .MenyInnovationBild {
         width: 50%;
         height: 10em;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        border-radius: 10px;
+    }
+    .kontaktaossknapp {
+        position: absolute;
+        top: 230%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 
@@ -88,8 +100,16 @@ header {
     }
     .MenyInnovationBild {
         width: 60%;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        border-radius: 10px;
+    }
+    .DriftoptimeringsBild {
+        width: 60%;
+    }
+    .kontaktaossknapp {
+        position: absolute;
+        top: 238%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 15em;
     }
 }
 
@@ -101,10 +121,12 @@ header {
     .MenyInnovationBild {
         width: 50%;
         height: 14em;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        border-radius: 10px;
     }
-    .image-text{
+    .DriftoptimeringsBild {
+        width: 30%;
+        height: 12em;
+    }
+    .image-text {
         margin-left: 4em;
     }
     .breadcrumbs {
@@ -112,5 +134,12 @@ header {
         font-size: 10px;
         font-size: 20px;
         margin-top: 20px;
+    }
+    .kontaktaossknapp {
+        position: absolute;
+        top: 360%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 15em;
     }
 }
