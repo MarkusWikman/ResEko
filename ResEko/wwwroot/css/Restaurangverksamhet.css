@@ -6,14 +6,17 @@ header {
     height: 100px;
 }
 
-img {
+.huvudbild {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 10px;
 }
-
-.TextUnderBild{
-    text-align:center;
-    margin-top:2em;
+.menyinnovation-container {
+    display: flex;
+    margin-top: 2em;
+}
+.TextUnderBild {
+    text-align: center;
+    margin-top: 2em;
 }
 
 .image-container {
@@ -49,7 +52,7 @@ img {
 
 /*Phone*/
 @media screen and (max-width: 767px) {
-    img {
+    .huvudbild {
         width: 90%;
         margin-left: 1em;
     }
@@ -66,20 +69,40 @@ img {
     .TextUnderBild {
         font-size: 70%;
     }
+    .menyinnovation-container {
+        font-size: 60%;
+    }
+    .MenyInnovationBild {
+        width: 50%;
+        height: 10em;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 10px;
+    }
 }
 
 /*Tablet*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    img {
+    .huvudbild {
         width: 90%;
         margin-left: 2em;
+    }
+    .MenyInnovationBild {
+        width: 60%;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 10px;
     }
 }
 
 /*Computer*/
 @media screen and (min-width: 1024px) {
-    img {
+    .huvudbild {
         margin-left: 8.5em;
+    }
+    .MenyInnovationBild {
+        width: 50%;
+        height: 14em;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 10px;
     }
     .image-text{
         margin-left: 4em;
